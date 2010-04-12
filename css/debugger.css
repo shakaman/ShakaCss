@@ -30,7 +30,3 @@
 
 /* animation */
 #debugger { -webkit-transition: left 0.3s ease-out; }
-
-
-/* for testing */
-#debugger { left: 0; }
