@@ -1,5 +1,5 @@
 /*
-javascript:void(function(){var%20s=document.createElement('script');s.src='http://debuggercss.local/js/debugger.js';document.getElementsByTagName('head')[0].appendChild(s);}());
+javascript:void(function(){var%20s=document.createElement('script');s.src='http://github.com/shakaman/ShakaCss/raw/master/js/debugger.js';document.getElementsByTagName('head')[0].appendChild(s);}());
 
 <div id="debugger">
   <h1>ShakaCSS</h1>
@@ -48,7 +48,7 @@ javascript:void(function(){var%20s=document.createElement('script');s.src='http:
 // Load JS
 load = function() 
 {
-  urlBase = "http://debuggercss.local"; 
+  urlBase = "http://github.com/shakaman/ShakaCss/raw/master"; 
   
   load.getScript(urlBase +"/js/jquery-1.4.2.min.js");
   load.getScript(urlBase +"/js/jquery-ui-1.8.custom.min.js");
