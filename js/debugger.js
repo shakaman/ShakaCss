@@ -1,7 +1,7 @@
 // Load JS
 load = function() 
 {
-  urlBase = "http://debuggercss.local"; 
+  urlBase = "http://shakacss.af83.com"; 
 
   /*
   load.getScript(urlBase +"/js/jquery-1.4.2.min.js");
