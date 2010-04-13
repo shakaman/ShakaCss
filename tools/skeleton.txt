@@ -1,0 +1,43 @@
+javascript:void(function(){var%20s=document.createElement('script');s.src='http://debuggercss.local/js/debugger.js';document.getElementsByTagName('head')[0].appendChild(s);}());
+
+<div id="debugger">
+  <div id="polux"></div>
+  <h1>ShakaCSS</h1>
+  <form name="debugger_form" id="spinner_form">
+    <fieldset>
+      <legend>Rule</legend>
+      <ul>
+        <li><label>Width :</label><input type="text" id="rule_width" name="rule_width" class="spinner" /></li>
+        <li><label>Height :</label><input type="text" id="rule_height" name="rule_height" class="spinner" /></li>
+        <li><label>Top :</label><input type="text" id="rule_top" name="rule_top" class="spinner" /></li>
+        <li><label>Left :</label><input type="text" id="rule_left" name="rule_left" class="spinner" /></li>
+      </ul>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Guides</legend>
+      <ul>
+        <li><label>Top :</label><input type="text" id="guideX_top" name="guideX_top" class="spinner" /></li>
+        <li><label>Left :</label><input type="text" id="guideY_left" name="guideY_left" class="spinner" /></li>
+      </ul>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Others tools</legend>
+      <ul class="others">
+        <li rel="grid" class="on">grid</li>
+      </ul>
+    </fieldset>
+  </form>
+</div>
+
+<div id="rule" class="draggable resizable"></div>
+<div id="guideX"></div>
+<div id="guideY"></div>
+
+
+ ToDoList :
+  - add position fixe button
+  - list buttons
+  - defaults values when no cookie
+  

@@ -82,4 +82,9 @@ function designerGrid() {
       context.stroke();
     }
   }
+  
+  $jShaka('ul.others li[rel="grid"]').bind('click', function() {
+    $jShaka('#designer_grid').fadeToggle();
+    $jShaka(this).toggleClass('on');
+  });
 }
