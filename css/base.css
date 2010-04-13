@@ -1,0 +1,37 @@
+/* Resets */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+:focus { outline: 0; }
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, aside, nav, article, #content { display: block; }
+
+.clear { clear: both; }
+.clear-block:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clear-block { display: inline-block; }
+/* Hides from IE-mac \*/
+* html .clear-block { height: 1%; }
+.clear-block { display: block; }
+
+body { height: 100%; width: 100%; font: 12px Arial; background: #FFF; }
+
+/* Header */
+header { width: 980px; margin: 0 auto; text-align: center; background: url('../images/debug.png') 702px 26px no-repeat; }
+header #title-1 { display: block; margin: 0 0 0 -80px; font: bold 472px/400px Arial; color: #e2007a; letter-spacing: -85px; text-transform: lowercase; }
+header #title-2 { clear: both; float: left; margin: -36px 0 0 204px; padding: 0 62px 45px 18px; font: bold 272px/90px Arial; color: #FFF; background: #e2007a; letter-spacing: -30px; text-transform: lowercase; }
+header #title-3 { float: left; margin: 0; padding: 0; font: bold 135px/60px Arial; color: #000; letter-spacing: -15.5px; text-transform: lowercase; }
+
+/* footer */
+footer { position: fixed; bottom: 0; width: 100%; }
+footer p { text-align: center; font: bold 12px Arial; letter-spacing: -1px; }
+footer p a { color: #e2007a; text-decoration: none; }
+footer p a:hover { color: #FFF; background: #e2007a; }
+
+/* content */
+#content { clear: both; float: left; width: 100%; margin: 30px 0 0 0; text-align: center; }
+#content span { font: bold 30px Arial; letter-spacing: -2px; }
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  header #title-2 { padding: 0 62px 2px 18px; }
+  header #title-3 { letter-spacing: -15px; }
+}
