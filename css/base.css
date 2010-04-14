@@ -21,16 +21,24 @@ header #title-2 { clear: both; float: left; margin: -36px 0 0 204px; padding: 0 
 header #title-3 { float: left; margin: 0; padding: 0; font: bold 135px/60px Arial; color: #000; letter-spacing: -15.5px; text-transform: lowercase; }
 
 /* footer */
-footer { position: fixed; bottom: 0; width: 100%; }
+footer { float: left; clear: both; width: 100%; margin: 100px 0 0 0;}
 footer p { text-align: center; font: bold 12px Arial; letter-spacing: -1px; }
 footer p a { color: #0094AB; text-decoration: none; }
 footer p a:hover { color: #FFF; background: #0094AB; }
 
 /* content */
-#content { clear: both; float: left; width: 100%; margin: 30px 0 0 0; text-align: center; }
-#content span { font: bold 30px Arial; letter-spacing: -2px; }
-#content p a { display: inline-block; margin: 30px 0 0 0; color: #0094AB; text-decoration: none; }
+#content { clear: both; float: left; width: 100%; margin: 30px 0 0 0; text-align: left; }
+#content p.test { text-align: center; }
+#content p.test span { font: bold 30px Arial; letter-spacing: -2px; }
+#content p a { color: #0094AB; text-decoration: none; }
 #content p a:hover { color: #FFF; background: #0094AB; }
+
+#content h1 { width: 500px; margin: 20px auto 10px auto; font: bold 20px Arial; letter-spacing: -2px; }
+#content h1:first-letter { color: #0094AB; }
+#content p { width: 500px; margin: 10px auto 10px auto; font: normal 14px Arial; }
+#content dl { width: 500px; margin: 0 auto; font: normal 14px Arial; }
+#content dl dt { font: bold 14px Arial; }
+#content dl dd { padding: 0 0 0 10px; font: normal 14px Arial; }
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
