@@ -130,14 +130,14 @@ function setCookieValues()
 function getCookieValue() 
 {
   var debuggerValues = $jShaka.cookie(COOKIE_NAME);
-  if (debuggerValues != null)
-  {
-    debuggerValues = debuggerValues.split('&');
-    $jShaka.each(debuggerValues, function(key, value) { 
-      var toolValue = value.split('=');
-      $jShaka('#'+ toolValue[0]).val(toolValue[1]);
-    });
-  }
+  if (debuggerValues == null)
+    debuggerValues = "rule_width=100&rule_height=50&rule_top=0&rule_left=0&guideX_top=0&guideY_left=0";
+    
+  debuggerValues = debuggerValues.split('&');
+  $jShaka.each(debuggerValues, function(key, value) { 
+    var toolValue = value.split('=');
+    $jShaka('#'+ toolValue[0]).val(toolValue[1]);
+  });
 }
 
 function initPosition() 
