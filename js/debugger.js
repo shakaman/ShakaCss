@@ -74,12 +74,8 @@ function initializeDebugger()
   $jShaka(debuggerCss).appendTo('body');
   
   $jShaka('#polux').click(function() {
-    $jShaka('#debugger:not(#debugger.on)').animate({
-      left: '0',
-    }, 250);
-    $jShaka('#debugger.on').animate({
-      left: '-180px',
-    }, 250);
+    $jShaka('#debugger:not(#debugger.on)').animate({left: '0'}, 250);
+    $jShaka('#debugger.on').animate({left: '-180px'}, 250);
     $jShaka('#debugger').toggleClass("on");
   });
   
@@ -98,8 +94,8 @@ function initializeDebugger()
   
   // draggable
   $jShaka('.draggable').draggable();
-  $jShaka("#guideX").draggable({ axis: 'y' });
-  $jShaka("#guideY").draggable({ axis: 'x' });
+  $jShaka("#guideX").draggable({axis: 'y'});
+  $jShaka("#guideY").draggable({axis: 'x'});
   $jShaka('.draggable, #guideX, #guideY').bind("dragstop", function(event, ui) {
     var tool = $jShaka(this).attr('id');
     var position = $jShaka(this).offset();
