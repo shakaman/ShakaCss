@@ -146,13 +146,13 @@ function getCookieValue()
 function initPosition() 
 {
   // GridderX
-  $jShaka('#gridderX').css({
-    'top': $jShaka('#gridderX_top').val() +'px'
+  $jShaka('#guideX').css({
+    'top': $jShaka('#guideX_top').val() +'px'
   });
   
   // GridderY
-  $jShaka('#gridderY').css({
-    'left': $jShaka('#gridderY_left').val() +'px'
+  $jShaka('#guideY').css({
+    'left': $jShaka('#guideY_left').val() +'px'
   });
   
   // Rule
