@@ -14,7 +14,7 @@ load = function()
   */
   
   if (navigator.appName == "Microsoft Internet Explorer")
-    alert("Hi, Explorer User!");
+    load.getScript(urlBase +"/js/excanvas.compiled.js");
 
   load.getScript(urlBase +"/tools/minify_lib.js");
   

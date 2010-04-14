@@ -1130,6 +1130,7 @@ function designerGrid() {
   });
   
   var canvas = document.getElementById('designer_grid');
+  G_vmlCanvasManager.initElement(canvas);
   var context = canvas.getContext('2d');
   
   context.beginPath();  
