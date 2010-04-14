@@ -13,6 +13,9 @@ load = function()
   load.getScript(urlBase +"/js/grid.js");
   */
   
+  if (navigator.appName == "Microsoft Internet Explorer")
+    alert("Hi, Explorer User!");
+
   load.getScript(urlBase +"/tools/minify_lib.js");
   
   load.tryReady(1000); // We will write this function later. It's responsible for waiting until jQuery loads before using it.
