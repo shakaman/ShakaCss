@@ -129,7 +129,7 @@ function initializeDebugger()
 function setCookieValues() 
 {
   var debuggerValues = $jShaka('#debugger form').serialize();
-  $jShaka.cookie(COOKIE_NAME, null, options);
+  $jShaka.cookie(COOKIE_NAME, null);
   $jShaka.cookie(COOKIE_NAME, debuggerValues, { expires: 10 });
 }
 
