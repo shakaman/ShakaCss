@@ -23,7 +23,7 @@ header #title-3 { float: left; margin: 0; padding: 0; font: bold 135px/60px Aria
 /* footer */
 footer { position: fixed; bottom: 0; width: 100%; }
 footer p { text-align: center; font: bold 12px Arial; letter-spacing: -1px; }
-footer p a { color: #e2007a; text-decoration: none; }
+footer p a { color: #0094AB; text-decoration: none; }
 footer p a:hover { color: #FFF; background: #0094AB; }
 
 /* content */
