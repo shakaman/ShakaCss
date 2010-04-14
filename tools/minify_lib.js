@@ -1129,7 +1129,7 @@ function designerGrid() {
     'opacity': '0.75'
   });
   
-  var canvas = $jShaka('#designer_grid');
+  var canvas = document.getElementById('designer_grid');
   var context = canvas.getContext('2d');
   
   context.beginPath();  
