@@ -2,7 +2,11 @@ function designerGrid() {
   var docWidth = $jShaka(document).width();
   var docHeight = $jShaka(document).height();
   
-  $jShaka('body').append('<canvas id="designer_grid" width= ' + docWidth + ' height= ' + docHeight + '></canvas>');
+  if (!document.createElement('canvas').getContext)
+    $jShaka('body').append('<div id="designer_grid" width= ' + docWidth + ' height= ' + docHeight + '></div>');
+  else
+    $jShaka('body').append('<canvas id="designer_grid" width= ' + docWidth + ' height= ' + docHeight + '></canvas>');
+  
   $jShaka('#designer_grid').css({
     'left': '0px', 
     'top': '0px', 
@@ -16,7 +20,8 @@ function designerGrid() {
   });
   
   var canvas = document.getElementById('designer_grid');
-  G_vmlCanvasManager.initElement(canvas);
+  if (!document.createElement('canvas').getContext)
+    G_vmlCanvasManager.initElement(canvas);
   var context = canvas.getContext('2d');
   
   context.beginPath();  
