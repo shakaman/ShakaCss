@@ -1112,9 +1112,11 @@ jQuery.fn.fadeToggle = function(speed, easing, callback) {
   return this.animate({opacity: 'toggle'}, speed, easing, callback);  
 };
 
-
 function designerGrid() {
-  $jShaka('body').append('<canvas id="designer_grid" width= ' + $jShaka(document).width() + ' height= ' + $jShaka(document).height() + '></canvas>');
+  var docWidth = $jShaka(document).width();
+  var docHeight = $jShaka(document).height();
+  
+  $jShaka('body').append('<canvas id="designer_grid" width= ' + docWidth + ' height= ' + docHeight + '></canvas>');
   $jShaka('#designer_grid').css({
     'left': '0px', 
     'top': '0px', 
@@ -1127,22 +1129,22 @@ function designerGrid() {
     'opacity': '0.75'
   });
   
-  var canvas = document.getElementById('designer_grid');
+  var canvas = $jShaka('#designer_grid');
   var context = canvas.getContext('2d');
   
   context.beginPath();  
   context.strokeStyle = "#eee";
   // draw the vertical grid lines
-  for (var x = 0.5; x < $jShaka(document).width(); x += 20)
+  for (var x = 0.5; x < docWidth; x += 20)
   {
     context.moveTo(x - 0.5, 0);
-    context.lineTo(x - 0.5, $jShaka(document).width());
+    context.lineTo(x - 0.5, docWidth);
   }
   // draw the horizontal grid lines
-  for (var y = 0.5; y < $jShaka(document).height(); y += 20)
+  for (var y = 0.5; y < docHeight; y += 20)
   {
     context.moveTo(0, y - 0.5);
-    context.lineTo($jShaka(document).width(), y - 0.5);
+    context.lineTo(docWidth, y - 0.5);
   }
   context.stroke();
   
@@ -1153,7 +1155,7 @@ function designerGrid() {
   // set the pen fill color and font
   context.fillStyle = "#000";
   context.font = "10px Hevetica";
-  for (var x = 0.5; x < $jShaka(document).width(); x += 10)
+  for (var x = 0.5; x < docWidth; x += 10)
   {
     context.beginPath();
     context.moveTo(x - 0.5, 0);
@@ -1177,7 +1179,7 @@ function designerGrid() {
   context.strokeStyle = "#000";
   context.fillStyle = "#000";
   context.font = "10px arial";
-  for (var y = 0.5; y < $jShaka(document).height(); y += 10)
+  for (var y = 0.5; y < docHeight; y += 10)
   {
     context.beginPath();
     context.moveTo(0, y - 0.5);
