@@ -42,8 +42,8 @@ footer p a:hover { color: #FFF; background: #0094AB; }
 
 
 /* Ribbon GitHub */
-.ribbon { position: fixed; bottom: 2.5em; right: -3em; overflow: hidden; background-color: #E2167A;
-        -moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg);
+.ribbon { position: fixed; top: 2.5em; right: -3em; overflow: hidden; background-color: #E2167A;
+        -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg);
         -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; }
 .ribbon a { display: block; margin: 0.05em 0 0.075em 0; padding: 0.5em 3.5em; border: 1px solid #faa; font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif; color: #fff; text-align: center; text-decoration: none; text-shadow: 0 0 0.5em #444; }
 
